@@ -2,10 +2,10 @@
 
 ## Índice
 
-* [1. Descripción del proyecto](#1. Descripción del proyecto)
-* [2. Imagen proyecto final](#2. Imagen proyecto final)
-* [3. Investigación UX](#3. Investigación UX)
-* [4. Objetivos de aprendizaje](4. Objetivos de aprendizaje)
+* [1. Descripción del proyecto]
+* [2. Imagen proyecto final]
+* [3. Investigación UX]
+* [4. Objetivos de aprendizaje]
 
 ***
 

@@ -1,28 +1,20 @@
-# Tarjeta de crédito válida
+# Apartamentos Hogar
 
 ## Índice
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Pistas, tips y lecturas complementarias](#6-pistas-tips-y-lecturas-complementarias)
+* [1. Descripción del proyecto](#1-Descripción del proyecto)
+* [2. Imagen proyecto final](#2-Imagen proyecto final)
+* [3. Investigación UX](#3-Investigación UX)
+* [4. Objetivos de aprendizaje](#4-Objetivos de aprendizaje)
 
 ***
 
-## 1. Preámbulo
+## 1. Descripción del proyecto
 
-El [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn),
-también llamado algoritmo de módulo 10, es un método de suma de verificación,
-se utiliza para validar números de identificación; tales como el IMEI de los
-celulares, tarjetas de crédito, etc.
+Apartamentos Hogar solicito una platarforma digital, para que sus habitantes
+puedan estar informados sobre las actividades administrativas y pedagógicas
+del conjunto, de igual manera 
 
-Pasos del algoritmo:
-- Obtenemos la reversa del número a verificar (que solamente contiene dígitos [0-9])
-- A todos los números que ocupan una posición par se les debe multiplicar por dos, si este número es mayor o igual a 10,
-debemos sumar los dígitos del resultado
-- El número a verificar será válido si la suma de sus dígitos finales es un múltiplo de 10.
 
 ## 2. Resumen del proyecto
 

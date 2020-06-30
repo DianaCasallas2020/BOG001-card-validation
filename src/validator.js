@@ -11,24 +11,20 @@ const validator = {
     // Evento adgoritmo luhn
     
     let sumaTotal = 0,
-        bEven = false;
+        vPar = false; //Comienza en false por que el primer número es impar
 
-    for (var n = cardNumber.length - 1; n >= 0; n--) {
+    for (var n = cardNumber.length - 1; n >= 0; n--) { /* Obtiene el caracter del string, var n guarda cardNumber.lenght - 1.
+                                                        para que comience desde el ultimo digito como el array al reves,*/
 
-      //Obtener el caracter del string cardNumber.lenght - 1. para que comience desde el ultimo digito
+      var nCaracter = cardNumber.charAt(n), // Obtiene el valor del caracter del string
+      
+      nEntero = +nCaracter; // Convierte el caracter a un entero, con la expresión unary plus
 
-      var nCaracter = cardNumber.charAt(n),
-
-      // Convierte el string a un entero, 
-
-        nEntero = parseInt(nCaracter, 10);
-
-
-
-      if (bEven && (nEntero *= 2) > 9) nEntero -= 9;
+      if (vPar && (nEntero *= 2) > 9)// Si la varible es false entonces no se cumple el resto de la condición
+        nEntero -= 9; // y si vPar es true la codición se cumple y que el numero se multipleque x 2 y si en mayor a nueve entonces le reste nueve
 
       sumaTotal += nEntero;
-      bEven = !bEven;
+      vPar = !vPar; // Está expresión unary dice que si vPar es false igual nofalse entonces es true
     }
 
     return (sumaTotal % 10) == 0;
@@ -38,13 +34,15 @@ const validator = {
 
   maskify: cardNumber => {
 
-    let mask_simbol = '#';
+    let mSimbolo = '#';
 
     if (cardNumber.length >= 4) {
-      let lastDigit = cardNumber.slice(-4);
-      let masked_str = mask_simbol.repeat(cardNumber.length - 4) + lastDigit;
 
-      return cardNumber = masked_str;
+      let lDigito = cardNumber.slice(-4);
+
+      let mTotal = mSimbolo.repeat(cardNumber.length - 4) + lDigito;
+
+      return cardNumber = mTotal;
 
     } else {
       return cardNumber;
@@ -53,3 +51,4 @@ const validator = {
 };
 
 export default validator;
+
